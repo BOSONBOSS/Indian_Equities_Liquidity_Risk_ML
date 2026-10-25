@@ -1,0 +1,49 @@
+# Operating System
+.DS_Store
+Thumbs.db
+
+# Python & Virtual Environments
+.venv/
+venv/
+ENV/
+env/
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Testing & Caching
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Logs & Temporary Files
+logs/*.log
+!logs/.gitkeep
+*.tmp
+*.tmp.parquet
+
+# Environment Variables & Secrets
+.env
+*.pem
+*.key
+
+# Data Layers (Raw, Processed features, Predictions)
+data/raw/*
+!data/raw/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+data/predictions/*
+!data/predictions/.gitkeep
+
+# Models (Joblib binary artifacts)
+models/*.joblib
+!models/.gitkeep
+
+# Track Clean Interim Data, Events, Manifests & Configs
+!data/events/*.csv
+!data/manifests/*.json
+!data/interim/**

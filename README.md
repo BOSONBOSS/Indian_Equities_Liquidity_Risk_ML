@@ -5,15 +5,6 @@
 [![Data Format](https://img.shields.io/badge/storage-Apache%20Parquet-orange.svg)](https://parquet.apache.org/)
 [![Exchange](https://img.shields.io/badge/exchange-NSE%20India-blue.svg)](https://www.nseindia.com/)
 
-**Academic Context:** Advanced Data Science (ADS) — SEM 5  
-**Group Number:** 8  
-**Team Members:**
-- **Aaryaman Pratap Singh** (ID: 240356)
-- **Aditya Nadar** (ID: 240368)
-- **Ananshi Sharma** (ID: 240377)
-- **Vighnesh Somani** (ID: 240946)
-
----
 
 ## 1. Executive Summary
 

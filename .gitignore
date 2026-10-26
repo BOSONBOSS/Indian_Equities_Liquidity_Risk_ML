@@ -1,49 +1,91 @@
-# Operating System
-.DS_Store
-Thumbs.db
-
-# Python & Virtual Environments
-.venv/
-venv/
-ENV/
-env/
+# Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
 *$py.class
+
+# C extensions
 *.so
 
-# Jupyter Notebook checkpoints
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Environment Variables & Secrets
+.env.*
+!.env.example
+*.pem
+*.key
+*.cert
+*.pfx
+
+# Jupyter Notebook Checkpoints
 .ipynb_checkpoints/
+*-checkpoint.ipynb
 
-# Testing & Caching
-.pytest_cache/
-.coverage
-htmlcov/
+# IDE & Editor Settings
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
 
-# Logs & Temporary Files
+# Project Data Directories & Artifacts
+# Datasets across data/raw/, data/interim/, data/processed/, data/predictions/,
+# data/manifests/, and data/events/ are eligible for tracking in Git.
+
+# Manifests and Events: ignore temporary dumps but allow all datasets
+data/events/*.tmp
+
+# Model Artifacts (Binary weights / scalers)
+models/*.joblib
+models/*.pkl
+models/*.onnx
+!models/model_registry.json
+
+# Runtime Logs
 logs/*.log
 !logs/.gitkeep
+
+# Temporary & Atomic Write Files
 *.tmp
 *.tmp.parquet
 
-# Environment Variables & Secrets
-.env
-*.pem
-*.key
+# Reports Output (allow report figures and markdown to be tracked)
+# !reports/figures/*.png
 
-# Data Layers (Raw, Processed features, Predictions)
-data/raw/*
-!data/raw/.gitkeep
-data/processed/*
-!data/processed/.gitkeep
-data/predictions/*
-!data/predictions/.gitkeep
+# OS generated files
+.DS_Store
+Thumbs.db
+desktop.ini
 
-# Models (Joblib binary artifacts)
-models/*.joblib
-!models/.gitkeep
-
-# Track Clean Interim Data, Events, Manifests & Configs
-!data/events/*.csv
-!data/manifests/*.json
-!data/interim/**
+# Testing & Coverage
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
